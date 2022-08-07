@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Homepage design with Bootstrap 4 and Animate css</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS only -->
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Footer / ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shail Group of Institutes</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse"
+                type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Our Colleges
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/index.html">IIST</a>
+                            <a class="dropdown-item" href="#">IIP</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">IIMR</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Facilities
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/smartcampus">Smart Campus</a>
+                            <a class="dropdown-item" href="">Laboratories</a>
+                            <a class="dropdown-item" href="/library">Library & Resources</a>
+                            <a class="dropdown-item" href="/hostel">Hostel</a>
+                            <a class="dropdown-item" href="/sports">Sports</a>
+                            <a class="dropdown-item" href='/transportation'>Transportation</a>
+                            <a class="dropdown-item" href='/auditorium'>Auditorium & Seminar Hall</a>
+                            <a class="dropdown-item" href="canteen">Canteen</a>
+                            <a class="dropdown-item" href="/computerLab">Computer Labs</a>
+                            <a class="dropdown-item" href="/workshop">Workshop</a>
+                            <a class="dropdown-item" href="/">Grievance</a>
+                        </div>
+                       
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Gallery
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Image Gallery</a>
+                            <a class="dropdown-item" href="#">Video Gallery</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="student.jsp">Admission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faculty.jsp">Placements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hod.jsp">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html"> 🔐Login</a>
+                            </li>
+                </ul>
+                </div>
+            </div>
+    </nav>
+    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="First slide" class="d-block w-100" src="./img/c1.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Welcome To</h5>
+                    <p class="animated bounceInLeft" style="animation-delay: 2s">Indore Institute of Science & Technology</p>
+                    <!-- <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">More Info</a></p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="Second slide" class="d-block w-100" src="./img/c2.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animated slideInDown" style="animation-delay: 1s">FOLLOW YOUR DREAMS @ IIST</h5>
+                    <!-- <p class="animated fadeInUp" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p> -->
+                    <!-- <p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="Third slide" class="d-block w-100" src="./img/meet.png">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="animated zoomIn" style="animation-delay: 1s">ADDING TO EVENTS</h5>
+                    <!-- <p class="animated fadeInLeft" style="animation-delay: 2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p> -->
+                    <!-- <p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p> -->
+                </div>
+            </div>
+        </div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next"
+            href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+
+    <!-- Bulletin -->
+    <div class="body">
+        <div class="ticker-container">
+            <div class="ticker">
+                <div class="title">
+                    <h5>Bulletin</h5>
+                </div>
+                <div class="news">
+                    <marquee>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- directorSection  -->
+    <section id="director-section">
+        <div id="director">
+            <div class="iframe">
+                <!-- <h3 class="mb-0" style="">Campus Tour</h3> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jDr-RFzxa-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="box">
+                <h2 class="h-secondary center" alt="">DG's Corner</h2>
+                <p>Dear Contributors,<br>Education, in essence, should bring to the fore the inner and inherent potential of the student. Educational institute, therefore, has to distinguish itself by providing sound infrastructure for higher education to
+                    leverage knowledge and innovation. More so, since the society and the nation look up to these centres for fulfilment of their aspirations and expectations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fliping Cards  -->
+    <hr>
+    <section id="flip-cards">
+        <h1 id="flip-header">Our Institutes</h1>
+        <div class="container-fluid all-flip-cards">
+
+            <div class="row ">
+                <div class="flip-card col-lg-4">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/img/flipping card iist.jpg" alt="Avatar" style="width:420px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>IIST</h1>
+                            <p>Indore Institute of Science and Technology</p>
+                            <a href="#">GET MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card col-lg-4">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/img/flipping card iip.jpg" alt="Avatar" style="width:420px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>IIP</h1>
+                            <p>Indore Institute of Pharmacy</p>
+                            <a href="">GET MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card col-lg-4">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/img/flipping card iimr.jpg" alt="Avatar" style="width:420px;height:200px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>IIMR</h1>
+                            <p>Indore Institute of Management and Research</p>
+                            <a href="">GET MORE INFORMATION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Courses OFfered Here -->
+    <section id="courses-offered">
+        <h1 id="course-header">Courses Offered </h1>
+        <hr class="new1">
+        <button class="collapsible"><strong>Bachelor of Technology</strong></button>
+        <div class="content">
+            <p><strong>Branch Specialization</strong></p>
+            <ol class="text">
+                <li>Artificial Intelligence & Machine Learning (AI & ML)</li>
+                <li>Computer Science & Engineering (CSE)</li>
+                <li>Information Technology (IT)</li>
+                <li>Electronics & Communication Engineering (ECE)</li>
+                <li>Mechanical Engineering (ME)</li>
+                <li>Chemical Engineering (CM)</li>
+                <li>Civil Engineering (CE)</li>
+            </ol>
+            <p><strong>Eligibility Criteria :</strong> 10+2 Qualified or equivalent exam with Maths<br>
+                <strong>Institute :</strong><a href="#" style="text-decoration:none;"> Indore Institute of Science & Technology</a><br>
+                <strong>University :</strong><a href="https://www.rgpv.ac.in/" style="text-decoration:none;"> Rajiv Gandhi Proudyogiki Vishwavidyalaya</a><br>
+                <strong>Help Line Number : 1800 103 3069</strong>
+            </p>
+        </div>
+        <button class="collapsible"><strong>Pharmacy</strong></button>
+        <div class="content">
+            <p><strong>Branch Specialization</strong></p>
+            <ol class="text">
+                <li>B.Pharmacy </li>
+                <li>D.Pharmacy</li>
+                <li>M.Pharmacy</li>
+            </ol>
+            <p><strong>Eligibility Criteria :</strong> 10+2 Qualified or equivalent exam with Physics,Chemistry,Maths/Biology<br>
+                <strong>Institute :</strong><a href="#" style="text-decoration:none;"> Indore Institute of Pharmacy</a><br>
+                <strong>University :</strong><a href="https://www.rgpv.ac.in/" style="text-decoration:none;"> Rajiv Gandhi Proudyogiki Vishwavidyalaya</a><br>
+                <strong>Help Line Number : 1800 103 3069</strong>
+            </p>
+        </div>
+        <button class="collapsible"><strong>Management</strong></button>
+        <div class="content">
+            <p><strong>Branch Specialization</strong></p>
+            <ol class="text">
+                <li>mba</li>
+                <li>bba(plain)</li>
+                <li>bba(ft)</li>
+                <li>b.com(hons)</li>
+                <li>b.sc(cs,maths,stats)</li>
+            </ol>
+            <p><strong>Eligibility Criteria :</strong> 10+2 Qualified <br>
+                <strong>Institute :</strong><a href="#" style="text-decoration:none;"> Indore Institute of Pharmacy</a><br>
+                <strong>University :</strong><a href="https://www.rgpv.ac.in/" style="text-decoration:none;"> Rajiv Gandhi Proudyogiki Vishwavidyalaya</a><br>
+                <strong>Help Line Number : 1800 103 3069</strong>
+            </p>
+        </div>
+        <button class="collapsible"><strong>Master Programme</strong></button>
+        <div class="content">
+            <p><strong>Branch Specialization</strong></p>
+            <ol class="text">
+                <li>digital Communication(ece)</li>
+                <li>Machine design</li>
+                <li>computer science & Engineering</li>
+            </ol>
+            <p><strong>Eligibility Criteria :</strong>B.tech/B.sc(CS/IT) qualified<br>
+                <strong>Institute :</strong><a href="#" style="text-decoration:none;"> Indore Institute of Science & Technology</a><br>
+                <strong>University :</strong><a href="https://www.rgpv.ac.in/" style="text-decoration:none;"> Rajiv Gandhi Proudyogiki Vishwavidyalaya</a><br>
+                <strong>Help Line Number : 1800 103 3069</strong>
+            </p>
+        </div>
+    </section>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <!-- News Feed  -->
+    <div class="bulletin">
+        <div class="bulletin-container">
+            <h1>Weekly News Feed</h1>
+            <div class="column-card">
+                <div class="card">
+                    <img src="/img/1971.jpg" />
+                    <div class="panel">
+                        <span class="date">26th</span>
+                        <p>
+                            I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                        </p>
+                        <span class="breaker"></span>
+                        <h3>
+                            Lorem ipsum dolor sit amet
+                        </h3>
+                        <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/4.jpg" />
+                    <div class="panel">
+                        <span class="date">26th</span>
+                        <p>
+                            I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                        </p>
+                        <span class="breaker"></span>
+                        <h3>
+                            Lorem ipsum dolor sit amet
+                        </h3>
+                        <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/2.jpg" />
+                    <div class="panel">
+                        <span class="date">26th</span>
+                        <p>
+                            I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                        </p>
+                        <span class="breaker"></span>
+                        <h3>
+                            Lorem ipsum dolor sit amet
+                        </h3>
+                        <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#!" class="allbtn">View All</a>
+        </div>
+    </div>
+    <!-- Placements -->
+    <h1 class="w3-center">Our Recruiters</h1>
+
+    <!-- Flickity HTML init -->
+    <section id="flickity">
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/amazon.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Byju's.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Ibm.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Infosys.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Cognizant-Logo.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/calsoft.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/VVDN.jpg">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/CapitalVia.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/CIS.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/CRMNEXT_Logo.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Experis.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/HDFC.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/hensel-logo.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Hexaware.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/ipca.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Juspay.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/lido.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/lupin.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Maan.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Nestle.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/optimus.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/silAris.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Smartbox_Logo.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Sofmen.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Stellar.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/syntel.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Systematix.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Tcs.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Tech-mahindra.png">
+            </div>
+            <div class="carousel-cell">
+                <img class="w3-image" src="/img/logo/Wipro.png">
+            </div>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="l-footer">
+            <h5>
+                <img src="/img/logo.jpg" alt=""><br>Indore Institute of Science & Technology</h5>
+            <p>
+                Opp. Indian Institute of Management<br>Rau - Pithampur Rd, Rau<br>Indore, Madhya Pradesh 453331</p>
+            <ul class="box">
+                <li><i class="fa fa-phone"></i><a>8225071000</a></li>
+                <li><i class="fa fa-envelope-o"></i><a>admissions@indoreinstitute.com</a></li>
+                <li><i class="fa fa-user-o"></i><a href="">indoreinstitute.com</a></li>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </ul>
+        </div>
+        <ul class="r-footer">
+            <li>
+                <h5>
+                    Quick Links</h5>
+                <ul class="box">
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">Placements</a></li>
+                    <li><a href="#">Transportation</a></li>
+                    <li><a href="#">Anti-Ragging</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h5>
+                    Activities</h5>
+                <ul class="box h-box">
+                    <li><a href="#">Expert Talk</a></li>
+                    <li><a href="#">Seminars</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">SIGs</a></li>
+                    <li><a href="#">IOTs</a></li>
+                </ul>
+            </li>
+            <div class="elfsight-app-0c5e3374-c6de-4ff6-b116-b67d9a2d0f23"></div>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.6569898714515!2d75.77919941443508!3d22.629280636591705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962f939228d75dd%3A0xcf9efd7925de48cc!2sIndore%20Institute%20of%20Science%20%26%20Technology!5e0!3m2!1sen!2sin!4v1635623534828!5m2!1sen!2sin"
+                width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+    <footer>
+        <div class="b-footer">
+            <p>
+                Copyright©2021 indoreinstitute.com All Rights Reserved <br>Developed by IT-1 </p>
+        </div>
+    </footer>
+  
+</body>
+
+</html>

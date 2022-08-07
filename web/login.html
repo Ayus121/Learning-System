@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS only -->
+    <!-- CSS only -->
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <navbar id="topnav">
+        <ul>
+          <li class="item-top"><a href="">SIG</a></li>
+          <li class="item-top"><a href="">NISP</a></li>
+          <li class="item-top"><a href="">Payments</a></li>
+           <li class="item-top"><a href="">Login</a></li>
+        </ul>
+      </navbar>
+      <section id="header">
+        <img class="campus-img" src="/img/course/IISTCAMPUS1.JPG" alt="IIST">
+        <div id="logo">
+          <img class="iist-logo" src="/img/course/iist-logo.png" alt="IIST">
+        </div>
+        <h1 class="h-primary">Indore Institute of Science & Technology</h1>
+      </section>
+    
+      <div class="top-navbar">
+        <nav id='menu'>
+          <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+          <ul>
+             <li><a href='index.html'>Home</a></li>
+            <li><a class='dropdown-arrow' href='http://'>Our College</a>
+              <ul class='sub-menus'>
+                <li><a href='/index.html'>IIST</a></li>
+                <li><a href='http://'>IIP</a></li>
+                <li><a href='http://'>IIMR</a></li>
+              </ul>
+            </li>
+            <li><a class='dropdown-arrow' href='http://'>Our Courses</a>
+              <ul class='sub-menus'>
+                  <li><a href='/cs'>COMPUTER SCIENCE</a></li>
+                  <li><a href='/it'>INFORMATION TECHNOLOGY</a></li>
+                  <li><a href='/ec'>ELECTRONICS & COMMUNICATION</a></li>
+                  <li><a href='/civil'>CIVIL ENGINEERING</a></li>
+                  <li><a href='/chemical'>CHEMICAL ENGINEERING</a></li>
+                  <li><a href='/mechanical'>MECHANICAL ENGINEERING</a></li>
+                  <li><a href='/ai'>ARTIFICIAL INTELLIGENCE</a></li>
+              </ul>
+          </li>
+            <li><a class='dropdown-arrow' href='http://'>Facilities</a>
+              <ul class='sub-menus'>
+                <li><a href='/smartcampus'>SMART CAMPUS</a></li>
+                <li><a href='http://'>LABORATORIES</a></li>
+                <li><a href='/library'>LIBRARY & RESOURCE CENTER</a></li>
+                <li><a href='/hostel'>HOSTEL</a></li>
+                <li><a href='/sports'>SPORTS FACILITIES</a></li>
+                <li><a href='/transportation'>TRANSPORTATION</a></li>
+                <li><a href='/canteen'>CANTEEN</a></li>
+                <li><a href='/auditorium'>AUDITORIUM & SEMINAR HALL</a></li>
+                <li><a href='/computerLab'>COMPUTER LAB</a></li>
+                <li><a href='/workshop'>WORKSHOP</a></li>
+                <li><a href='http://'>GRIEVANCE</a></li>
+              </ul>
+            </li>
+            <li><a class='dropdown-arrow' href='http://'>Gallery</a>
+              <ul class='sub-menus'>
+                <li><a href='http://'>IMAGE GALLERY</a></li>
+                <li><a href='http://'>VIDEO GALLERY</a></li>
+              </ul>
+            </li>
+            <li><a href='/admission'>Admission</a></li>
+            <li><a href='/placement'>Placement</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/contact'>Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+   
+
+    <form action="LoginChecker" method="post">
+      <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        <h2>Login Here</h2>
+      </div>
+    
+      <div class="container">
+        <label for="id"><b>UserID</b></label>
+        <input type="text" placeholder="Enter Username" name="id" required>
+    
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <label for="category"><b>Category</b></label>
+          <select name="category" id="category">
+        <option value="admin">Admin</option>
+        <option value="hod">HOD</option>
+        <option value="faculty">Faculty</option>
+        <option value="student">Student</option>
+      </select>   
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      
+    </form>
+      
+</body>
+</html>
